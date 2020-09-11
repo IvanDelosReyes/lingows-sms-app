@@ -1,0 +1,240 @@
+#root{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+::placeholder {
+  font-size:16px;
+}
+input{
+  width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: solid 1px #CBCED3;
+    box-sizing: border-box;
+    font-family: lato;
+    font-size: 16px;
+    color:#333333;
+    min-height: initial;
+}
+#name{
+  margin-top:15px;
+}
+textarea{
+  width: 100%;
+  height:140px;
+padding:8px;
+    margin: auto;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top:8px;
+    border: solid 1px #CBCED3;
+    font-family: lato;
+    font-size: 16px;
+    color:#333333;
+}
+.label{
+  display:none;
+}
+.textButton{
+  width:150px;
+  height:48px;
+  background-color: #647abb;
+  color:white;
+  border-style: none;
+  border-radius:5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top:15px;
+}
+.container{
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color: #f1f1f1;
+}
+h3{
+  font-size:20px;
+}
+h1{
+  margin-top:0px;
+}
+.App p{
+  text-align:left;
+  margin:0px;
+}
+.Form-body {
+  text-align: center;
+  width: 300px;
+    border-radius:5px;
+    /* box-shadow: 2px 2px 25px 2px rgba(0, 0, 0, 0.17); */
+    box-shadow: 0px 0 2px 0 rgba(0,0,0,0.16), 0 0 2px 0 rgba(0,0,0,0.16), 0 3px 2px 0 rgba(0,0,0,0.23);
+    position: fixed;
+    bottom: 95px;
+    /* display: none; */
+}
+#Form_body{
+  transition: .3s ease;
+  display: none;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  display: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.txt-input p{
+  display:none;
+  color:red;
+  transition: .3s ease;
+}
+.myForm input{
+border: 1px solid #CBCED3;
+transition: .3s ease;
+}
+.myForm input:invalid:required {
+  border: 1px solid red;
+  transition: .3s ease;
+}
+.myForm input:valid{
+  border: 1px solid #CBCED3;
+  transition: .3s ease;
+}
+.form-bottom a{
+  text-decoration: none;
+  color: #58585a ;
+  text-shadow: 1px 1px 0px #fff;
+}
+.form-bottom{
+  padding:20px 10px 20px 10px;
+  background-image:url('./transparent-lingows-media-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color:white;
+}
+.form-bottom span{
+  color:#333333;
+}
+#error{
+  color:#333333;
+}
+
+.App h3{
+  font-size: 20px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+.App h3, .App p, .App span{
+  font-family: lato;
+}
+.sms-icon{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: relative;
+  display: block;
+  background-color: #647abb;
+  background-image:url('./sms-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  transition: .1s ease;
+}
+.sms_icon_toggle{
+  background-color: #db4437;
+  background-image:url('./close-icon.png');
+  background-size: 40%;
+}
+
+.title-cont{
+    margin: 0px;
+    padding: 15px;
+  background-color: #647abb;
+  border-radius: 5px 5px 0px 0px;
+}
+
+@media only screen and (max-width: 640px) {
+  #error{
+    font-size: 14px;
+  }
+  .Form-body{
+    width: calc(100% - 20px);
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+      z-index:999 !important;
+  }
+  .App h3{
+    font-size: 18px;
+text-align: left;
+  }
+  .sms-icon{
+    right: 10px;
+  }
+  .small-sms-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: relative;
+    display: block;
+    background-color: #db4437;
+    background-image:url('./close-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    cursor: pointer;
+    transition: .1s ease;
+    margin-left: auto;
+  }
+  .title-cont{
+    display: flex;
+      align-items: center;
+  }
+  .hide-icon-mobile{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .sms-icon{
+    right: 20px;
+  }
+  .Form-body {
+      right: 15pt;
+  }
+}
+
